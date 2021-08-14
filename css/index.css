@@ -219,6 +219,10 @@ h9{
 
 }
 
+#mobile{
+    width: 80%;
+    display: none;
+}
 .nccInfo{
     grid-area: nccInfo;
     border: 20px solid rgb(106, 106, 106);
@@ -336,6 +340,7 @@ footer{
     background-color: rgba(67, 67, 67);
     display: flex;
     margin-top: 70px;
+  
 }
 
 .footerText{
@@ -350,6 +355,15 @@ footer{
     margin: 30px;
     margin-left: 0;
     margin-right: 0;
+}
+
+#footerDivide2{
+    color: white;
+    border-top: 2px solid white;
+    margin: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    display: none;
 }
 
 .footerLogos{
@@ -376,6 +390,13 @@ footer{
     justify-content: space-evenly;
     margin-left: 60px;
     margin-right: 150px;
+}
+
+.footerContact{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .button2{
@@ -423,4 +444,362 @@ textarea{
 
 #ft{
     color: white;
+}
+
+
+
+
+
+
+
+
+/* ------------------MEDIA QUERY----------------- */
+
+
+@media only screen and (max-width: 600px) {
+    .navigation{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        background-color: rgba(67, 67, 67, 0.8);
+        color: white;
+        padding: 0px 150px;
+        position: fixed;      
+        width: 84%;
+        
+    }
+    
+    .logo-item{
+        display: inline-block;
+        justify-content: space-evenly;
+    }
+    
+    #my-name{
+        display: none;
+       
+    }
+    
+    img{
+        padding-right: 3px;
+    }
+    
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        font-size: 35px;
+    } 
+    
+    
+    .menu{
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    li{
+        display: inline-block;
+        list-style: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    
+    a{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        font-size: 25px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    /* hero css */
+    
+    .hero{
+        display: flex;
+        flex-direction: column;
+        /* justify-content:space-between;
+        align-items: center; */
+        background-color: rgb(106, 106, 106);
+    }
+    
+    #noMarginLeft{
+        display: flex;
+    }
+    
+    .heroText{
+        display: flex;
+        flex-direction: column;
+        padding-left: 150px;
+        padding-right: 150px;
+        
+    }
+    
+    h1{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 50px;
+        
+    }
+    
+    #hiImAlex{
+        color: rgb(255, 154, 153);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 50px;
+        margin-bottom: 0;  
+    }
+    
+    #role{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 25px;
+    }
+    
+    #role{
+        margin-top: 0;
+    }
+    
+    
+    .heroButtons{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .button1{
+        display: inline-block;
+        background-color: rgb(255, 154, 153);
+        border: none;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        border-radius: 10px;
+        height: 75px;
+        width: 267px;
+        margin: 15px;
+    }
+    
+    
+    
+    p{
+        color: rgb(67, 67, 67);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+    }
+    
+    h7{
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 40px;
+       
+    }
+    
+    #skills{
+        padding: 0% 17% 0% 17%;
+        color: rgb(255, 154, 153);
+        text-align: center;
+    }
+    
+    .skills{
+        color: rgb(255, 154, 153);
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0px 80px 0px;
+    }
+    
+    h6{
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 65px;
+        margin: auto;
+    }
+    
+    h9{
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 30px;
+        color: rgb(238, 171, 162);
+    }
+    
+    .skills img{
+        display: none;
+        padding: 20px 0px 20px 0px;
+    }
+    
+    
+    .grid{
+        
+        display: grid;
+        padding: 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "nccInfo"
+        "spaceOutInfo "
+        "travelistInfo"
+        ;
+        grid-gap:50px;
+        justify-content: start;
+
+    }
+    
+    #mobile{
+        width: 80%;
+        display: flex;
+    }
+
+    .nccInfo{
+        grid-area: nccInfo;
+        border: 20px solid rgb(106, 106, 106);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 75px;
+       
+    }
+    
+   
+    
+    .spaceOutInfo{
+        grid-area: spaceOutInfo;
+        border: 20px solid rgb(229, 245, 251);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 75px;
+    }
+  
+    
+    .travelistInfo{
+        grid-area: travelistInfo;
+        border: 20px solid  rgb(255, 154, 153);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 75px;
+    }
+    
+   
+    
+    footer{
+        background-color: rgba(67, 67, 67);
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+      
+    }
+    
+    .footerText{
+        margin-left: 150px;
+        margin-right: 60px;
+        display: inline-block;
+        flex-direction: column;
+    }
+    
+    #footerDivide{
+        color: white;
+        border-top: 2px solid white;
+        margin: 30px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #footerDivide2{
+        color: white;
+        border-top: 2px solid white;
+        margin: 30px;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+    }
+    
+    .footerLogos{
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+    #LI{
+        display: inline-block
+        justify-content: center;
+    }
+    
+    #port{
+        display: inline-block;
+        justify-content: center;
+    }
+    
+    .footerForm{
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 60px;
+        margin-right: 150px;
+    }
+    
+    .footerContact{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .button2{
+        background-color: rgba(67, 67, 67);
+        border: solid white 2px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        border-radius: 10px;
+        height: 75px;
+        width: 267px;
+        justify-content: center;
+    }
+    
+    textarea{
+        resize: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        border-radius: 10px;
+        background-color: rgb(86, 85, 85);
+        color: white;
+        border: solid white 2px;
+        margin: 0px 0px 10px 0px;
+        
+    }
+    
+    #emailForm{
+        background-color: rgb(67, 67, 67);
+        border: none;
+        border-bottom: solid white 2px;
+        border-radius: 0;
+        margin: 20px 0px 10px 0px;
+    }
+    
+    .copyright{
+        background-color: rgb(67, 67, 67);
+    }
+    
+    #copyright{
+        font-size: 18px;
+        margin: 0;
+        padding-bottom: 5px;
+        margin-left: 150px;
+        color: white;
+    }
+    
+    #ft{
+        color: white;
+    }
+
 }
